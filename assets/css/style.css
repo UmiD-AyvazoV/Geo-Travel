@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  padding: 50px 60px 37px;
+  background-image: url("../img/header/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .headerCont {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+header .headerCont .right .lang {
+  transition: 0.5s linear;
+}
+header .headerCont .right .lang .langs {
+  display: none;
+}
+header .headerCont .right .lang .langs .active {
+  color: red;
+}
+header .headerCont .right .lang .langs div {
+  margin-left: 7px;
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #004191;
+}
+header .headerCont .right .lang .langs div:hover {
+  color: red;
+}
+header .headerCont .right .lang:hover {
+  background: #fff;
+  padding: 10px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+header .headerCont .right .lang:hover svg {
+  fill: #004191;
+}
+header .headerCont .right .lang:hover .langs {
+  display: flex;
+}
+header .headerCont .right .menu {
+  cursor: pointer;
+}
+header .headerCont .right .menu div {
+  transition: 0.5s linear;
+}
+header .headerCont .right .menu .lines {
+  margin-left: 30px;
+}
+header .headerCont .right .menu .lines .line {
+  width: 12.5px;
+  border: 1.5px solid #fff;
+}
+header .headerCont .right .menu .lines .line:nth-child(2) {
+  width: 25px;
+  border: 1.5px solid #fff;
+  margin: 7.5px 0;
+}
+header .headerCont .right .menu .lines .line:nth-child(3) {
+  margin-left: 12px;
+}
+header .headerCont .right .menu .open {
+  width: 63px;
+}
+header .headerCont .right .menu .open div {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 10px;
+}
+header .headerCont .right .menu .open div:last-child {
+  display: none;
+}
+header .headerCont .right .menu:hover .lines .line:first-child {
+  transform: translateY(10px);
+}
+header .headerCont .right .menu:hover .lines .line:last-child {
+  transform: translateY(-9px);
+}
+header .headerCont .right .menu:hover .open div:first-child {
+  display: none;
+}
+header .headerCont .right .menu:hover .open div:last-child {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

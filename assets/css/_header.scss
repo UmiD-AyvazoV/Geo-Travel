@@ -1,0 +1,106 @@
+header {
+  .headerCont {
+    max-width: 1320px;
+    margin: 0 auto;
+    .right {
+      .lang {
+        transition: 0.5s linear;
+        .langs {
+          display: none;
+          .active {
+            color: red;
+          }
+          div {
+            margin-left: 7px;
+            font-family: "Futura";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #004191;
+          }
+        }
+        .langs {
+          div:hover {
+            color: red;
+          }
+        }
+      }
+      .lang:hover {
+        background: #fff;
+        padding: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        svg {
+          fill: #004191;
+        }
+        .langs {
+          display: flex;
+        }
+      }
+      .menu {
+        div {
+            transition: 0.5s linear;
+        }
+        cursor: pointer;
+        .lines {
+          margin-left: 30px;
+          .line {
+            width: 12.5px;
+            border: 1.5px solid #fff;
+          }
+          .line:nth-child(2) {
+            width: 25px;
+            border: 1.5px solid #fff;
+            margin: 7.5px 0;
+          }
+          .line:nth-child(3) {
+            margin-left: 12px;
+          }
+        }
+        .open {
+            width: 63px;
+          div {
+            font-family: "Futura";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-left: 10px;
+          }
+          div:last-child {
+            display: none;
+          }
+        }
+      }
+      .menu:hover {
+        .lines {
+            .line:first-child {
+                transform: translateY(10px);
+            }
+            .line:last-child {
+                transform: translateY(-9px);
+            }
+        }
+        .open {
+          div:first-child {
+            display: none;
+          }
+          div:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  height: 100vh;
+  padding: 50px 60px 37px;
+  background: {
+    image: url("../img/header/header.png");
+    size: cover;
+    repeat: no-repeat;
+  }
+}
