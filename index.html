@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/linkIcon/icon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Geo Travel</title>
   </head>
   <body>
     <header>
-      <div class="headerCont between">
+      <div class="headerCont">
+
+      <div class="header between">
         <div class="logo">
           <a href="index.html">
             <svg
@@ -88,18 +95,437 @@
 
           <div class="menu center">
             <div class="lines">
+              <div class="line firstLine"></div>
               <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
+              <div class="line lastLine"></div>
             </div>
 
             <div class="open">
-              <div>menu</div>
-              <div>open</div>
+              <div class="nth1">menu</div>
+              <div class="nth2">open</div>
+              <div class="nth3">close</div>
             </div>
           </div>
         </div>
       </div>
+
+        <p>Our goal is to ensure that you experience your theme in the best way and get maximum comfort and satisfaction, in your accommodations.</p>
+
+        <div class="row">
+          <a href="#sect1">
+            <img src="assets/img/header/row.png" alt="#">
+          </a>
+        </div>
+
+        <h2>Back <span>to</span> nature</h2>
+
+        <div class="nav df">
+
+          <div class="leftOne">
+            <div class="left center">
+              <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li class="destination"><a href="destination.html">Destination</a></li>
+                <li class="contact"><a href="#sect6">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rightOne">
+            <div class="rg">
+
+              <div class="info">
+                <p>+994 50 123 45 67</p>
+                <p>info@geotravel.az</p>
+              </div>
+
+              <div class="text">
+                <h2>Address</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+
+              <div class="icons">
+                <img src="assets/img/header/wp.png" alt="#">
+                <img src="assets/img/header/fb.png" alt="#">
+                <img src="assets/img/header/ins.png" alt="#">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </header>
-  </body>
+
+    <main>
+
+      <section class="sect1" id="sect1">
+        <div data-aos="fade-up" class="sect1Cont df">
+
+          <div class="img">
+            <img src="assets/img/sect1/1.png" alt="#">
+          </div>
+
+          <div class="text">
+            <h2>About us</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sect2">
+        <div data-aos="fade-up" class="sect2Cont df">
+
+          <div class="text">
+            <h2>Discover a destination with a story to tell from intriguing cities to high passes. All our destinations are on our places page</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+
+          <div class="img">
+            <img src="assets/img/sect2/1.png" alt="#">
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sect3">
+        <div data-aos="fade-up" class="sect3Cont">
+
+          <h2>Explore our top destinations</h2>
+
+          <div class="manshet_appartment">
+
+            <div class="swiper-container gallery-top">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="sld_img">
+                            <img src="assets/img/sect3/baku.png" alt="#" />
+                        </div>
+                        <div class="text">
+                          <p>Azerbaijan</p>
+                          <p>Baku</p>
+                          <a href="destination.html">— read more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_img">
+                            <img src="assets/img/sect3/antalya.jpg" alt="#" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Antalya</p>
+                          <a href="destination.html">— read more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_img">
+                            <img src="assets/img/sect3/cappadocia.jpg" alt="#" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Cappadocia</p>
+                          <a href="destination.html">— read more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_img">
+                            <img src="assets/img/sect3/izmir.jpg" alt="#" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Izmir</p>
+                          <a href="destination.html">— read more</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white">
+                  <img src="assets/img/sect3/right.png" alt="#">
+                </div>
+                <div class="swiper-button-prev swiper-button-white">
+                  <img src="assets/img/sect3/left.png" alt="#">
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="swiper-container gallery-thumbs">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="sld_thumb_img">
+                            <img src="assets/img/sect3/baku.png" alt="#" class="thumb_img" />
+                        </div>
+                        <div class="text">
+                          <p>Azerbaijan</p>
+                          <p>Baku</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_thumb_img">
+                            <img src="assets/img/sect3/antalya.jpg" alt="#" class="thumb_img" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Antalya</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_thumb_img">
+                            <img src="assets/img/sect3/cappadocia.jpg" alt="#" class="thumb_img" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Cappadocia</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sld_thumb_img">
+                            <img src="assets/img/sect3/izmir.jpg" alt="#" class="thumb_img" />
+                        </div>
+                        <div class="text">
+                          <p>Turkey</p>
+                          <p>Izmir</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+      </section>
+
+      <section class="sect4">
+        <div class="sect4Cont">
+
+          <h2>Why us ?</h2>
+
+          <div class="boxs between">
+
+            <div class="box">
+              <div class="img">
+                <img src="assets/img/sect4/1.png" alt="#">
+                <div class="blur"></div>
+              </div>
+              <div class="text">
+                <h2>time</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img">
+                <img src="assets/img/sect4/2.png" alt="#">
+                <div class="blur"></div>
+              </div>
+              <div class="text">
+                <h2>calculated weather</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img">
+                <img src="assets/img/sect4/3.png" alt="#">
+                <div class="blur"></div>
+              </div>
+              <div class="text">
+                <h2>currency</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sect5">
+        <div class="sect5Cont">
+          
+          <h2>Reference</h2>
+
+          <div class="swiper reference">
+            <div class="swiper-wrapper boxs df">
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/1.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                  <h2>Cameron Williamson</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/2.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                  <h2>Ralph Edwards</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/3.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                  <h2>Albert Flores</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/4.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                  <h2>Jane Cooper</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/1.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                  <h2>Cameron Williamson</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/2.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                  <h2>Ralph Edwards</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/3.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                  <h2>Albert Flores</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box between">
+                  <img src="assets/img/sect5/4.png" alt="#">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                  <h2>Jane Cooper</h2>
+                  <div>Graphic Designer</div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-button-next">
+              <img src="assets/img/sect5/right.png" alt="#">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="assets/img/sect5/left.png" alt="#">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sect6" id="sect6">
+        <div class="sect6Cont">
+          
+          <div class="left">
+            <h2>Contact us</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <form>
+              <input type="text" placeholder="Name, Surname*">
+              <input type="email" placeholder="E-mail*">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+
+          <div class="right">
+            <img src="assets/img/sect6/1.png" alt="#">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footerCont between">
+        
+        <div class="left">
+          <img src="assets/img/footer/logo.png" alt="#">
+          <h2>subscribe</h2>
+          <p>Enter your email to get notifield about our new solitions</p>
+          <div class="inp">
+            <input type="email" placeholder="E-mail*">
+            <img src="assets/img/footer/icon.png" alt="#">
+          </div>
+        </div>
+
+        <div class="right">
+
+          <ul>
+            <li><a href="#sect1">About</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="#sect6">Contact</a></li>
+          </ul>
+
+          <h2>Address</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+          <div class="icons">
+            <img src="assets/img/footer/icons.png" alt="#">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg">
+        <img src="assets/img/footer/1.png" alt="#">
+        <img src="assets/img/footer/2.png" alt="#">
+        <div class="text between">
+          <p>© 2022 GEO Travel</p>
+          <p>All rights reserved  |  Privacy  |  Terms & Condition</p>
+          <p>Site by <span>JEDAI</span></p>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+  </body> 
 </html>

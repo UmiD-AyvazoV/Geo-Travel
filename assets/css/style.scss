@@ -2,6 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-@import "header"
+body {
+    overflow-x: hidden;
+}
+
+@import "header";
+@import "sect1";
+@import "sect2";
+@import "sect3";
+@import "sect4";
+@import "sect5";
+@import "sect6";
+@import "footer";
+@import "destination";
+@import "media";
