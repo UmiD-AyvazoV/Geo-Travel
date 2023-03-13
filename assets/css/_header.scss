@@ -3,7 +3,6 @@ body.oh {
 }
 
 header {
-  overflow: hidden;
   height: 100vh;
   padding: 50px 60px 37px;
   background: {
@@ -19,14 +18,11 @@ header {
       .right {
         .lang {
           transition: 0.5s linear;
-
           .langs {
             display: none;
-
             .active {
               color: red;
             }
-
             div {
               margin-left: 7px;
               font-family: "Futura";
@@ -38,14 +34,12 @@ header {
               color: #004191;
             }
           }
-
           .langs {
             div:hover {
               color: red;
             }
           }
         }
-
         .lang:hover {
           background: #fff;
           padding: 10px;
@@ -60,7 +54,6 @@ header {
             display: flex;
           }
         }
-
         .menu {
           div {
             transition: 0.5s linear;
@@ -106,7 +99,6 @@ header {
             }
           }
         }
-
         .menu.on {
           .lines {
             .line:nth-child(1) {
@@ -125,7 +117,6 @@ header {
             }
           }
         }
-
         .menu:hover {
           .open {
             .nth1,
@@ -151,12 +142,10 @@ header {
           }
         }
       }
-
       .logo,
       .right {
-        z-index: 5;
+        z-index: 9;
       }
-
       .logo.fill {
         svg path {
           fill: #004191;
@@ -166,6 +155,7 @@ header {
     .header.del {
       background: none !important;
       box-shadow: none !important;
+      transition: 0.5s linear;
       .right {
         .menu {
           .lines {
@@ -184,10 +174,10 @@ header {
     .header.bg {
       position: fixed;
       width: 100vw;
-      z-index: 5;
+      z-index: 9;
       top: 0;
       left: 0;
-      padding-left: 18em;
+      padding-left: 10%;
       background: #fff;
       box-shadow: 0px -2px 10px rgb(0 0 0 / 50%);
       .logo {
@@ -197,7 +187,7 @@ header {
         }
       }
       .right {
-        margin-right: 19em;
+        margin-right: 10%;
         .lang {
           svg path {
             fill: #004191;
@@ -217,7 +207,6 @@ header {
         }
       }
     }
-
     p {
       font-family: "Poppins";
       font-style: normal;
@@ -229,12 +218,10 @@ header {
       top: 595px;
       max-width: 539px;
     }
-
     .row {
       position: absolute;
       top: 761px;
     }
-
     h2 {
       font-family: "Futura";
       font-style: normal;
@@ -243,7 +230,7 @@ header {
       line-height: 130px;
       text-transform: uppercase;
       color: #fff;
-      width: 394px;
+      max-width: 394px;
       position: absolute;
       top: 570px;
       right: 0;
@@ -359,11 +346,10 @@ header {
       }
     }
     .nav.zIndex {
-      z-index: 2;
+      z-index: 8;
     }
   }
 }
-
 header.destination {
   background: none !important;
   height: max-content !important;

@@ -20,11 +20,6 @@
         }
       }
     }
-    .sect6Cont {
-      .left {
-        margin-left: 60px !important;
-      }
-    }
   }
 }
 
@@ -46,11 +41,6 @@
         p {
           font-size: 20px !important;
         }
-      }
-    }
-    .sect6Cont {
-      .right {
-        width: 38% !important;
       }
     }
     .desSect2Cont {
@@ -75,6 +65,13 @@
       .right {
         img {
           width: 100% !important;
+        }
+      }
+    }
+    .sect6Cont {
+      .right {
+        .bg {
+          padding-right: 10% !important;
         }
       }
     }
@@ -143,6 +140,19 @@
         }
       }
     }
+    .sect6Cont {
+      .left {
+        width: 40% !important;
+      }
+      .right {
+        .bg {
+          padding-top: 10% !important;
+          div {
+            width: 40% !important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -150,30 +160,20 @@
   main {
     .sect1Cont {
       .img {
+        width: 100% !important;
         img {
-          width: 300px !important;
-          height: 300px !important;
+          width: 100% !important;
+          height: auto !important;
         }
       }
     }
-    .sect6Cont {
-      flex-direction: column-reverse;
-      .left {
-        h2 {
-          margin-left: 0 !important;
-          max-width: 90% !important;
+    .sect2Cont {
+      .img {
+        width: 100% !important;
+        img {
+          width: 100% !important;
+          height: auto !important;
         }
-        p {
-          max-width: 90% !important;
-        }
-        form {
-          max-width: 90% !important;
-        }
-      }
-      .left,
-      .right {
-        margin: 30px auto 0 !important;
-        width: 90% !important;
       }
     }
     .desSect3Cont {
@@ -188,13 +188,37 @@
     .desSectAllCont {
       .left {
         margin-top: 20px !important;
-        p, .title, h2 {
+        p,
+        .title,
+        h2 {
           width: 90vw !important;
         }
       }
       .right {
         img {
           width: 85vw !important;
+        }
+      }
+    }
+    .sect6Cont {
+      flex-direction: column-reverse;
+      padding-left: 0 !important;
+      .left {
+        margin: 100px auto 0 !important;
+        width: 90vw !important;
+        form, p {
+          max-width: 100% !important;
+        }
+        h2 {
+          margin-left: 0 !important;
+        }
+      }
+      .right {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        div:not(.bg) {
+          width: 100vw !important;
         }
       }
     }
@@ -208,6 +232,11 @@
         visibility: hidden;
       }
       .gallery-top {
+        .swiper-slide {
+          .text {
+            left: 10px !important;
+          }
+        }
         .line {
           visibility: hidden;
         }
@@ -221,11 +250,6 @@
     .sect1Cont {
       padding: 100px 20px !important;
       flex-direction: column;
-      .img {
-        img {
-          width: 90vw !important;
-        }
-      }
       .text {
         margin-left: 20px !important;
       }
@@ -233,11 +257,6 @@
     .sect2Cont {
       padding: 100px 20px !important;
       flex-direction: column-reverse;
-      .img {
-        img {
-          width: 90vw !important;
-        }
-      }
       .text {
         margin-right: 20px !important;
       }
@@ -378,7 +397,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 707px) {
   header {
     ul {
       margin-left: 40px !important;
@@ -409,27 +428,159 @@
     }
     .header.bg {
       padding-left: 3em !important;
-      .logo {
-        margin-right: 100px;
-      }
     }
   }
+}
+
+@media screen and (max-width: 500px) {
   .sect4Cont {
     .box:nth-child(2) {
       margin: 20px 0;
-    }
-  }
-  .sect6Cont {
-    .right {
-      div {
-        max-width: 520px !important;
-      }
     }
   }
   .desSect1Cont {
     .right {
       p {
         font-size: 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+      ul {
+        margin-left: 10px !important;
+        li {
+          a {
+            font-size: 20px !important;
+          }
+        }
+      }
+      .logo {
+        svg {
+          max-width: 88px;
+        }
+      }
+      p {
+        top: 200px !important;
+      }
+      .row {
+        top: 661px !important;
+      }
+      .rg {
+        .text {
+          margin-left: 20% !important;
+          h2,p {
+            margin-left: 50px !important;
+          }
+          h2 {
+             top: 400px !important;
+             max-width: max-content !important;
+          }
+          P {
+            top: 300px !important;
+          }
+        }
+        .info {
+          width: 100% !important;
+          top: 200px !important;
+          p {
+          top: 200px !important;
+          margin-left: 50% !important;
+          }
+          p:last-child {
+            transform: translate(0,30px) !important;
+          }
+        }
+      }
+      .lang {
+        display: none !important;
+      }
+      h2 {
+        font-size: 50px !important;
+        line-height: 50px !important;
+        top: 450px !important;
+        left: 0;
+        font-size: 40px !important;
+      }
+      .header.bg {
+        padding-left: 3em !important;
+      }
+    }
+    footer {
+      padding-bottom: 0 !important;
+    .footerCont {
+      .right {
+        ul {
+            li {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+            li:nth-child(2) {
+                a {
+                    margin: 0 10px !important;
+                }
+            }
+        }
+        h2 {
+            font-size: 16px !important;
+        }
+        p {
+            font-size: 15px !important;
+        }
+    }
+    }
+    .bg {
+      margin-top: 70px;
+      position: relative;
+      img {
+          max-width: 100%;
+          position: absolute;
+      }
+      img:nth-child(1) {
+          height: 70px !important;
+      }
+      img:nth-child(2) {
+          height: 100px !important;
+          top: 10px;
+      }
+      .text {
+          position: relative;
+          padding: 0 50px !important;
+          top: 30px !important;
+          flex-wrap: wrap !important;
+          p {
+              font-weight: 100 !important;
+              font-size: 12px !important;
+          }
+      }
+  }
+  }
+  .sect4Cont {
+    padding: 0 !important;
+    .boxs {
+      .box {
+        margin: 0 auto !important;
+      }
+    }
+  }
+  .sect6Cont {
+    .left {
+      h2 {
+        font-size: 20px !important;
+      }
+    }
+    .right {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      div:not(.bg) {
+        width: 10vw !important;
+      }
+      .bg {
+        margin-left: 20px !important;
       }
     }
   }

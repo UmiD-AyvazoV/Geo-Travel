@@ -5,16 +5,11 @@
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 body.oh {
   overflow: hidden;
 }
 
 header {
-  overflow: hidden;
   height: 100vh;
   padding: 50px 60px 37px;
   background-image: url("../img/header/header.png");
@@ -125,7 +120,7 @@ header .headerCont .header .right .menu:hover.on .open .nth3 {
 }
 header .headerCont .header .logo,
 header .headerCont .header .right {
-  z-index: 5;
+  z-index: 9;
 }
 header .headerCont .header .logo.fill svg path {
   fill: #004191;
@@ -133,6 +128,7 @@ header .headerCont .header .logo.fill svg path {
 header .headerCont .header.del {
   background: none !important;
   box-shadow: none !important;
+  transition: 0.5s linear;
 }
 header .headerCont .header.del .right .menu .lines .line {
   border: 1.5px solid #fff !important;
@@ -143,10 +139,10 @@ header .headerCont .header.del .right .menu .open div {
 header .headerCont .header.bg {
   position: fixed;
   width: 100vw;
-  z-index: 5;
+  z-index: 9;
   top: 0;
   left: 0;
-  padding-left: 18em;
+  padding-left: 10%;
   background: #fff;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -157,7 +153,7 @@ header .headerCont .header.bg .logo svg path {
   fill: #004191;
 }
 header .headerCont .header.bg .right {
-  margin-right: 19em;
+  margin-right: 10%;
 }
 header .headerCont .header.bg .right .lang svg path {
   fill: #004191;
@@ -191,7 +187,7 @@ header .headerCont h2 {
   line-height: 130px;
   text-transform: uppercase;
   color: #fff;
-  width: 394px;
+  max-width: 394px;
   position: absolute;
   top: 570px;
   right: 0;
@@ -301,7 +297,7 @@ header .headerCont .nav .rightOne {
   transform: translateX(100%);
 }
 header .headerCont .nav.zIndex {
-  z-index: 2;
+  z-index: 8;
 }
 
 header.destination {
@@ -558,6 +554,9 @@ main .sect5 .sect5Cont h2 {
   text-align: center;
   margin-bottom: 90px;
 }
+main .sect5 .sect5Cont .reference {
+  z-index: -1;
+}
 main .sect5 .sect5Cont .reference .boxs {
   margin: 0 10px;
   height: 310px;
@@ -609,13 +608,12 @@ main .sect5 .sect5Cont .reference .swiper-button-prev {
 
 main .sect6 {
   margin-bottom: 124px;
+  position: relative;
 }
 main .sect6 .sect6Cont {
   max-width: 1320px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding-left: 50px;
 }
 main .sect6 .sect6Cont .left {
   width: 50%;
@@ -663,22 +661,30 @@ main .sect6 .sect6Cont .left form input:nth-child(4) {
   font-size: 18px;
   line-height: 27px;
   color: #fff;
+  transition: 0.5s linear;
 }
-main .sect6 .sect6Cont .right {
-  position: relative;
+main .sect6 .sect6Cont .left form input:nth-child(4):hover {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #004191;
+  color: #004191;
+}
+main .sect6 .sect6Cont .right .bg {
+  max-width: 500px;
+  max-height: 600px;
+  margin-top: 8%;
+  z-index: 1;
+}
+main .sect6 .sect6Cont .right .bg img {
+  width: 100%;
+  height: 100%;
+}
+main .sect6 .sect6Cont .right div:not(.bg) {
   width: 50%;
-}
-main .sect6 .sect6Cont .right img {
-  width: 90%;
-  height: 600px;
-  padding-bottom: 30px;
-}
-main .sect6 .sect6Cont .right div {
-  width: 1050px;
   height: 674px;
   position: absolute;
-  top: -10%;
-  left: -15%;
+  top: 0;
+  right: 0;
   z-index: -1;
 }
 main .sect6 .sect6Cont .right div:nth-child(2) {
@@ -726,7 +732,7 @@ footer .footerCont .left p {
   margin-bottom: 20px;
 }
 footer .footerCont .left .inp {
-  width: 399px;
+  max-width: 399px;
   position: relative;
 }
 footer .footerCont .left .inp input {
@@ -748,6 +754,7 @@ footer .footerCont .left .inp img {
 }
 footer .footerCont .right ul {
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footerCont .right ul li a {
   font-family: "Futura";
@@ -761,7 +768,7 @@ footer .footerCont .right ul li a {
   display: inline-block;
 }
 footer .footerCont .right ul li:nth-child(2) a {
-  margin: 0 75px;
+  margin: 0 55px;
 }
 footer .footerCont .right h2 {
   font-family: "Futura";
@@ -780,7 +787,7 @@ footer .footerCont .right p {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
-  width: 418px;
+  max-width: 418px;
   margin-bottom: 40px;
 }
 footer .bg {
@@ -1176,9 +1183,6 @@ main .desSectAll .desSectAllCont .left p {
     width: 33% !important;
     right: 15% !important;
   }
-  main .sect6Cont .left {
-    margin-left: 60px !important;
-  }
 }
 @media screen and (max-width: 1360px) {
   main .sect2Cont {
@@ -1194,9 +1198,6 @@ main .desSectAll .desSectAllCont .left p {
   }
   main .sect2Cont .text p {
     font-size: 20px !important;
-  }
-  main .sect6Cont .right {
-    width: 38% !important;
   }
   main .desSect2Cont {
     margin: 0 auto !important;
@@ -1216,6 +1217,9 @@ main .desSectAll .desSectAllCont .left p {
   }
   main .desSectAllCont .right img {
     width: 100% !important;
+  }
+  main .sect6Cont .right .bg {
+    padding-right: 10% !important;
   }
 }
 @media screen and (max-width: 1340px) {
@@ -1262,29 +1266,30 @@ main .desSectAll .desSectAllCont .left p {
     width: 90% !important;
     margin: 0 auto !important;
   }
+  main .sect6Cont .left {
+    width: 40% !important;
+  }
+  main .sect6Cont .right .bg {
+    padding-top: 10% !important;
+  }
+  main .sect6Cont .right .bg div {
+    width: 40% !important;
+  }
 }
 @media screen and (max-width: 1000px) {
+  main .sect1Cont .img {
+    width: 100% !important;
+  }
   main .sect1Cont .img img {
-    width: 300px !important;
-    height: 300px !important;
+    width: 100% !important;
+    height: auto !important;
   }
-  main .sect6Cont {
-    flex-direction: column-reverse;
+  main .sect2Cont .img {
+    width: 100% !important;
   }
-  main .sect6Cont .left h2 {
-    margin-left: 0 !important;
-    max-width: 90% !important;
-  }
-  main .sect6Cont .left p {
-    max-width: 90% !important;
-  }
-  main .sect6Cont .left form {
-    max-width: 90% !important;
-  }
-  main .sect6Cont .left,
-  main .sect6Cont .right {
-    margin: 30px auto 0 !important;
-    width: 90% !important;
+  main .sect2Cont .img img {
+    width: 100% !important;
+    height: auto !important;
   }
   main .desSect3Cont {
     grid-template-columns: repeat(3, 1fr) !important;
@@ -1298,16 +1303,43 @@ main .desSectAll .desSectAllCont .left p {
   main .desSectAllCont .left {
     margin-top: 20px !important;
   }
-  main .desSectAllCont .left p, main .desSectAllCont .left .title, main .desSectAllCont .left h2 {
+  main .desSectAllCont .left p,
+  main .desSectAllCont .left .title,
+  main .desSectAllCont .left h2 {
     width: 90vw !important;
   }
   main .desSectAllCont .right img {
     width: 85vw !important;
   }
+  main .sect6Cont {
+    flex-direction: column-reverse;
+    padding-left: 0 !important;
+  }
+  main .sect6Cont .left {
+    margin: 100px auto 0 !important;
+    width: 90vw !important;
+  }
+  main .sect6Cont .left form, main .sect6Cont .left p {
+    max-width: 100% !important;
+  }
+  main .sect6Cont .left h2 {
+    margin-left: 0 !important;
+  }
+  main .sect6Cont .right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  main .sect6Cont .right div:not(.bg) {
+    width: 100vw !important;
+  }
 }
 @media screen and (max-width: 945px) {
   main .sect3Cont .gallery-thumbs {
     visibility: hidden;
+  }
+  main .sect3Cont .gallery-top .swiper-slide .text {
+    left: 10px !important;
   }
   main .sect3Cont .gallery-top .line {
     visibility: hidden;
@@ -1318,18 +1350,12 @@ main .desSectAll .desSectAllCont .left p {
     padding: 100px 20px !important;
     flex-direction: column;
   }
-  main .sect1Cont .img img {
-    width: 90vw !important;
-  }
   main .sect1Cont .text {
     margin-left: 20px !important;
   }
   main .sect2Cont {
     padding: 100px 20px !important;
     flex-direction: column-reverse;
-  }
-  main .sect2Cont .img img {
-    width: 90vw !important;
   }
   main .sect2Cont .text {
     margin-right: 20px !important;
@@ -1430,7 +1456,7 @@ main .desSectAll .desSectAllCont .left p {
     font-size: 25px !important;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 707px) {
   header ul {
     margin-left: 40px !important;
   }
@@ -1455,16 +1481,127 @@ main .desSectAll .desSectAllCont .left p {
   header .header.bg {
     padding-left: 3em !important;
   }
-  header .header.bg .logo {
-    margin-right: 100px;
-  }
+}
+@media screen and (max-width: 500px) {
   .sect4Cont .box:nth-child(2) {
     margin: 20px 0;
   }
-  .sect6Cont .right div {
-    max-width: 520px !important;
-  }
   .desSect1Cont .right p {
     font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  header ul {
+    margin-left: 10px !important;
+  }
+  header ul li a {
+    font-size: 20px !important;
+  }
+  header .logo svg {
+    max-width: 88px;
+  }
+  header p {
+    top: 200px !important;
+  }
+  header .row {
+    top: 661px !important;
+  }
+  header .rg .text {
+    margin-left: 20% !important;
+  }
+  header .rg .text h2, header .rg .text p {
+    margin-left: 50px !important;
+  }
+  header .rg .text h2 {
+    top: 400px !important;
+    max-width: -moz-max-content !important;
+    max-width: max-content !important;
+  }
+  header .rg .text P {
+    top: 300px !important;
+  }
+  header .rg .info {
+    width: 100% !important;
+    top: 200px !important;
+  }
+  header .rg .info p {
+    top: 200px !important;
+    margin-left: 50% !important;
+  }
+  header .rg .info p:last-child {
+    transform: translate(0, 30px) !important;
+  }
+  header .lang {
+    display: none !important;
+  }
+  header h2 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    top: 450px !important;
+    left: 0;
+    font-size: 40px !important;
+  }
+  header .header.bg {
+    padding-left: 3em !important;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footerCont .right ul li a {
+    font-size: 12px !important;
+  }
+  footer .footerCont .right ul li:nth-child(2) a {
+    margin: 0 10px !important;
+  }
+  footer .footerCont .right h2 {
+    font-size: 16px !important;
+  }
+  footer .footerCont .right p {
+    font-size: 15px !important;
+  }
+  footer .bg {
+    margin-top: 70px;
+    position: relative;
+  }
+  footer .bg img {
+    max-width: 100%;
+    position: absolute;
+  }
+  footer .bg img:nth-child(1) {
+    height: 70px !important;
+  }
+  footer .bg img:nth-child(2) {
+    height: 100px !important;
+    top: 10px;
+  }
+  footer .bg .text {
+    position: relative;
+    padding: 0 50px !important;
+    top: 30px !important;
+    flex-wrap: wrap !important;
+  }
+  footer .bg .text p {
+    font-weight: 100 !important;
+    font-size: 12px !important;
+  }
+  .sect4Cont {
+    padding: 0 !important;
+  }
+  .sect4Cont .boxs .box {
+    margin: 0 auto !important;
+  }
+  .sect6Cont .left h2 {
+    font-size: 20px !important;
+  }
+  .sect6Cont .right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .sect6Cont .right div:not(.bg) {
+    width: 10vw !important;
+  }
+  .sect6Cont .right .bg {
+    margin-left: 20px !important;
   }
 }/*# sourceMappingURL=style.css.map */
