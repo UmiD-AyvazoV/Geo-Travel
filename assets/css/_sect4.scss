@@ -1,0 +1,75 @@
+main {
+  .sect4 {
+    margin: 100px 0;
+    .sect4Cont {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 84px;
+      h2 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #004191;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .boxs {
+        flex-wrap: wrap;
+        .box {
+          text-align: center;
+          .img {
+            position: relative;
+            .blur {
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              background: #0072ff;
+              filter: blur(17px);
+            }
+          }
+          h2 {
+            font-family: "Futura";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #004191;
+            margin: 30px 0 10px;
+          }
+          p {
+            width: 275px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 21px;
+            color: #000000;
+          }
+        }
+        .box:nth-child(1),
+        .box:nth-child(3) {
+          .blur {
+            top: 40px;
+            left: 80px;
+          }
+        }
+        .box:nth-child(2) {
+          .blur {
+            top: 40px;
+            right: 80px;
+          }
+        }
+        .box:nth-child(3) {
+          .blur {
+            top: 10px;
+            right: 80px;
+          }
+        }
+      }
+    }
+  }
+}
